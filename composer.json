@@ -1,0 +1,34 @@
+{
+    "name": "lukepolo/fake-real-addresses",
+    "description": "Generates fake but real addresses so you can use geocoding",
+    "type": "plugin",
+    "require": {
+        "willdurand/geocoder": "^3.3",
+        "php-http/guzzle6-adapter": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Policinski",
+            "email": "luke@lukepolo.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LukePOLO\\FakeRealAddresses\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "prefer-stable" : true,
+    "minimum-stability": "dev"
+}
