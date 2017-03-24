@@ -18,10 +18,11 @@ class Generator
 
     /**
      * FakeRealAddresses constructor.
+     * @param null $apiKey
      */
-    public function __construct()
+    public function __construct($apiKey = null)
     {
-        $this->geocoder = new GoogleMaps(new CurlHttpAdapter());
+        $this->geocoder = new GoogleMaps(new CurlHttpAdapter(), null, null, true, $apiKey);
     }
 
     /**
