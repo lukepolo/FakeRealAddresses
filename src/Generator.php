@@ -75,7 +75,9 @@ class Generator
                 'city' => $address->getLocality(),
                 'province' => $address->getAdminLevels()->first()->getName(),
                 'country' => $address->getCountryCode(),
-                'postal_code' => $address->getPostalCode()
+                'postal_code' => $address->getPostalCode(),
+                'latitude' => $address->getLatitude(),
+                'longitude' => $address->getLongitude()
             ];
 
         } catch(NoResult $e) {
